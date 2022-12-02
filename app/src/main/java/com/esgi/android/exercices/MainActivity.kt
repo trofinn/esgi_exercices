@@ -78,7 +78,5 @@ class ProductViewHolder(v : View) : RecyclerView.ViewHolder(v) {
         Glide.with(itemView).load(product.image).into(productImage);
     }
 }
-    }
-}
 
 data class ProductCell(val nom : String, val marque : String, val kcal : String, val image : String) {}
