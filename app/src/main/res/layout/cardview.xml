@@ -1,0 +1,294 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="70dp"
+    android:layout_marginHorizontal="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="15dp">
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="15dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image"
+            android:src="@drawable/illu_parking"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="Sudirman District Space"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toTopOf="@id/image"
+            android:layout_marginStart="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:text="Sudirman District Space"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:layout_marginStart="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/light_grey"/>
+
+        <include layout="@layout/progress_divider"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrive"
+            android:text="Arrive"
+            android:textSize="10dp"
+            android:textColor="@color/light_grey"
+            app:layout_constraintStart_toStartOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrive_hour"
+            android:text="11.00"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/arrive"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrive_date"
+            android:text="11.00"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/arrive_hour"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/light_grey"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_dashed_line"
+            android:id="@+id/line"
+            app:layout_constraintStart_toEndOf="@id/arrive_hour"
+            app:layout_constraintTop_toTopOf="@id/arrive_hour"
+            app:layout_constraintBottom_toBottomOf="@id/arrive_hour"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exit"
+            android:text="Exit"
+            android:textSize="10dp"
+            android:textColor="@color/light_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exit_hour"
+            android:text="11.00"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exit"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exit_date"
+            android:text="11.00"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exit_hour"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/light_grey"
+            android:layout_marginEnd="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Name"
+            android:textColor="@color/light_grey"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/arrive_date"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_value"
+            android:text="Kal Havertz"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/parking_pass"
+            android:text="Parking Pass"
+            android:textColor="@color/light_grey"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/name_value"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/parking_pass_value"
+            android:text="#23-56-76"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/parking_pass"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/duration"
+            android:text="Duration"
+            android:textColor="@color/light_grey"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/parking_pass_value"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/duration_value"
+            android:text="2.5 hours"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/duration"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        //////////////////////////////////////////////////
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vehicle"
+            android:text="Vehicle"
+            android:textColor="@color/light_grey"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/vehicle_value"
+            app:layout_constraintTop_toBottomOf="@id/arrive_date"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="100dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vehicle_value"
+            android:text="BMW 320i Sport"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/parking_spot"
+            android:text="Parking Spot"
+            android:textColor="@color/light_grey"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/vehicle"
+            app:layout_constraintTop_toBottomOf="@id/name_value"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/parking_spot_value"
+            android:text="#A-13 (F1)"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/vehicle"
+            app:layout_constraintTop_toBottomOf="@id/parking_pass"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/payment"
+            android:text="Payment Method"
+            android:textColor="@color/light_grey"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/vehicle"
+            app:layout_constraintTop_toBottomOf="@id/parking_pass_value"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/payment_value"
+            android:text="Credit Card"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/vehicle"
+            app:layout_constraintTop_toBottomOf="@id/duration"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:textColor="@color/black"/>
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/barcode"
+            android:src="@drawable/ic_barcode"
+            app:layout_constraintStart_toStartOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/duration_value"
+            android:layout_marginTop="40dp"/>
+        <include layout="@layout/progress_divider"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

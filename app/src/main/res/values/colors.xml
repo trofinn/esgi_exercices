@@ -10,6 +10,7 @@
     <color name="green_secondary">#1A1CBE8E</color>
     <color name="blue_primary">#FF2378EF</color>
     <color name="blue_secondary">#1A2378EF</color>
+    <color name ="black">#000000</color>
 
     <color name="background">#FF22252F</color>
     <color name="divider">#FFE5E5E5</color>

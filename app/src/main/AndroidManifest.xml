@@ -20,7 +20,7 @@
             </intent-filter>
 
             <meta-data
-                android:name="android.app.lib_name"
+                android:name="trofin"
                 android:value="" />
         </activity>
     </application>

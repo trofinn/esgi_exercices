@@ -9,9 +9,20 @@
         android:layout_height="14dp"
         android:background="@drawable/bg_dashed_line"
         android:layerType="software"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="120dp"
+        android:id="@+id/line1"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="14dp"
+        android:background="@drawable/bg_dashed_line"
+        android:layerType="software"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/line1"
+        android:layout_marginTop="300dp"
+        android:id="@+id/line2"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
