@@ -18,8 +18,13 @@ class MainActivity : AppCompatActivity() {
 
 
         setContentView(R.layout.activity_main)
-        val product = null;
-        val products = listOf(product)
+        val productCell = ProductCell(
+            "Petits pois et carrotes",
+            "Cassegrain",
+            "234",
+            "https://static.openfoodfacts.org/images/products/308/368/008/5304/front_fr.7.400.jpg"
+        );
+        val products = listOf(productCell)
         val adapter= ListAdapter(products, object : OnProductListener {
                 override fun onClicked(product: ProductCell, position: Int) {
                     Toast.makeText(
